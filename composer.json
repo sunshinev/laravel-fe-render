@@ -1,0 +1,20 @@
+{
+    "name": "sunshinev/fe-render",
+    "authors": [
+        {
+            "name": "sunshinev"
+        }
+    ],
+    "description": "vue fe render",
+    "license": "MIT",
+    "autoload": {
+        "Sunshinev\\Vue\\Render": "\\"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Sunshinev\\Render\\RenderServiceProvider"
+            ]
+        }
+    }
+}
