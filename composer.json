@@ -8,7 +8,9 @@
     "description": "vue + view remote template render for laravel",
     "license": "MIT",
     "autoload": {
-        "Sunshinev\\Vue\\Render": "\\"
+        "psr-4":{
+            "Sunshinev\\Vue\\Render": "\\"
+        }
     },
     "extra": {
         "laravel": {
