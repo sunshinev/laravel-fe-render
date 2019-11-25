@@ -5,7 +5,7 @@
             "name": "sunshinev"
         }
     ],
-    "description": "vue fe render",
+    "description": "vue + view remote template render for laravel",
     "license": "MIT",
     "autoload": {
         "Sunshinev\\Vue\\Render": "\\"
