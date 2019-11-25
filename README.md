@@ -1,2 +1,5 @@
 # laravel-fe-render
-do not use blade~but use vue+iview~ you always know~
+
+使用vue+iview来写blade模板
+
+
