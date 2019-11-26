@@ -5,6 +5,7 @@
             "name": "sunshinev"
         }
     ],
+    "license":"MIT",
     "description": "vue + view remote template render for laravel",
     "autoload": {
         "psr-4":{
