@@ -9,7 +9,7 @@
     "description": "vue + view remote template render for laravel",
     "autoload": {
         "psr-4":{
-            "Sunshinev\\Render\\": "\\"
+            "Sunshinev\\Render\\": "\\src"
         }
     },
     "extra": {

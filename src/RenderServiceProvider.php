@@ -13,7 +13,7 @@ class RenderServiceProvider extends ServiceProvider
      */
     public function register()
     {
-
+        
     }
 
     /**
@@ -29,5 +29,9 @@ class RenderServiceProvider extends ServiceProvider
         $this->publishes([
             __DIR__.'/config.php' => config_path('fe-render.php'),
         ]);
+
+        $this->publishes([
+            __DIR__.'/assets' => public_path('/gii_assets/base_fe/'),
+        ], 'gii_assets_base_fe');
     }
 }
