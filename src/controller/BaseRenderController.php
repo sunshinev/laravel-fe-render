@@ -38,11 +38,12 @@ class BaseRenderController extends Controller
      */
     public function render(Request $request) {
 
-        $parentPath = str_replace(['App\Http\Controllers\\','\RenderController'],['',''],static::class);
+        $parentPath = trim(str_replace(['App\Http\Controllers','RenderController'],['',''],static::class),'\\');
 
         $viewPath = $request->get('path');
 
-        $viewPath = strtolower($parentPath).'.'.str_replace('/','.',trim($viewPath,'/'));
+        $viewPath = strtolower(str_replace(['\\','/'],['.','.'],trim($parentPath.'/'.$viewPath,'/')));
+
         // 改造viewpath
         $viewPath = view($viewPath)->getPath();
 
